@@ -6,7 +6,9 @@ else
 if [ ! -d build ]; then
 	mkdir build
 fi
-
+    if [ -n "${CC}" ] ; then echo "Using '${CC}' as C compiler." ; fi
+    if [ -n "${CXX}" ] ; then echo "Using '${CXX}' as C++ compiler." ; fi
+    echo
     #################
     # generate git version number
     ./generate_version_number.sh
@@ -14,8 +16,8 @@ fi
     mv GitVersion.cpp ../../src/revlanguage/utils/
 
 	./regenerate.sh $@
-	cd build 
-	CC=gcc CXX=g++ cmake .
+	cd build
+	cmake .
 	make -j 4
 	cd ..
 	
