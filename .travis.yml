@@ -70,7 +70,7 @@ before_install:
 script:
 # Build
   - cd projects/cmake
-  - ./build.sh
+  - ./build.sh -travis true
 # Run tests
   - cd ../..
   - echo "\"Hello World\"" | projects/cmake/rb
