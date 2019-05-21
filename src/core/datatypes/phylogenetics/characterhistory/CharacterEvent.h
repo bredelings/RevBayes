@@ -3,6 +3,7 @@
 
 #include <stdlib.h>
 #include <vector>
+#include <string>
 
 #include "Cloneable.h"
 #include "CharacterEventType.h"

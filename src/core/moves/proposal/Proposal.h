@@ -4,6 +4,8 @@
 #include "Cloneable.h"
 
 #include <vector>
+#include <string>
+
 
 namespace RevBayesCore {
     

@@ -8,6 +8,7 @@
 
 #include "GeographicArea.h"
 
+#include <ostream>
 #include <sstream>
 
 using namespace RevBayesCore;

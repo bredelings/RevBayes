@@ -14,8 +14,6 @@
 #ifndef Cloneable_H
 #define Cloneable_H
 
-#include <string>
-
 namespace RevBayesCore {
     
     class Cloneable {

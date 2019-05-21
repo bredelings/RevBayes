@@ -12,6 +12,11 @@
 #include "Cloneable.h"
 #include <set>
 #include <vector>
+#include <string>
+
+namespace {
+    class ostream;
+}
 
 namespace RevBayesCore {
 
